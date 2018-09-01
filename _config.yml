@@ -24,7 +24,7 @@ github_username:  adrenalinehit
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: hacker
 plugins:
   - jekyll-feed
 
