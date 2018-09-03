@@ -29,6 +29,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-twitter-plugin
+  - jekyll-gist
 
 #kramdown:
 #  parse_block_html: true
