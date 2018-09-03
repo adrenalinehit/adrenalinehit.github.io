@@ -29,6 +29,9 @@ plugins:
   - jekyll-feed
   - jekyll-twitter-plugin
 
+#kramdown:
+#  parse_block_html: true
+
 google_analytics: UA-125142778-1
 show_excerpts: true
 
