@@ -10,7 +10,7 @@ Geek with a law degree.  Often found falling off mountain bikes. Love the outdoo
 
 Had computers in my life for as long as I can remember, and have been able to code for a while too...
 
-If you want to know what I do for a living, linkedin is over [here](https://www.linkedin.com/in/nick-payne-5b0a231/).
+If you want to know what I do for a living, linkedin is over [here](https://www.linkedin.com/in/nick-payne-5b0a231/){:target="_blank"}.
 
 # What's this all about then?
 
