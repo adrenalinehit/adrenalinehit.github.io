@@ -31,6 +31,9 @@ plugins:
 google_analytics: UA-125142778-1
 show_excerpts: true
 
+disqus:
+  shortname: adrenalinehitblog
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
