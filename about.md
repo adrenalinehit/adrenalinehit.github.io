@@ -28,7 +28,7 @@ Disqus is enabled on posts, moderator approval required for all comments.
 
 Keep 'em clean and they'll be published. 
 
-Remember, human's a sensitive creatures. Don't be a dick.
+Remember, humans are sensitive creatures. Don't be a dick.
 
 
 
