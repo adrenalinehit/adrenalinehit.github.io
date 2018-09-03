@@ -18,10 +18,11 @@ email: ndpayne@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   It was about time that I got one of these...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://adrenalinehit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adrenalinehit
 github_username:  adrenalinehit
-
+disqus:
+  shortname: adrenalinehitblog
 # Build settings
 markdown: kramdown
 theme: minima
@@ -34,10 +35,6 @@ plugins:
 
 google_analytics: UA-125142778-1
 show_excerpts: true
-
-disqus:
-  shortname: adrenalinehitblog
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
