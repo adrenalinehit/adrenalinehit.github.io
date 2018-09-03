@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+{% twitter https://twitter.com/adrenalinehit maxwidth=500 limit=5 %}
