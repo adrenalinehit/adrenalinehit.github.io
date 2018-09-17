@@ -20,6 +20,7 @@ _to follow when's there's a bit more data_
 
 There were many sources of info for this project...
 
-- instructables
-- some cambridge site - url to follow
-- various aws docs
+- [instructables](http://www.instructables.com/id/Read-temperature-with-DS18B20-Raspberry-Pi-2/)
+- [some cambridge site](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/)
+- [various aws docs](https://aws.amazon.com/serverless/)
+
