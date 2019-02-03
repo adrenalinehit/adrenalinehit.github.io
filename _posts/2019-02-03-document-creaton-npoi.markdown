@@ -23,8 +23,8 @@ Looked into various libraries, but the favorite was NPOI, simply because:
 
 # Credits / resources
 
-[Java version of the replacer](https://stackoverflow.com/questions/22268898/replacing-a-text-in-apache-poi-xwpf)
-[Nuget package for DotNetCore NPOI](https://www.nuget.org/packages/DotNetCore.NPOI)
+* [Java version of the replacer](https://stackoverflow.com/questions/22268898/replacing-a-text-in-apache-poi-xwpf)
+* [Nuget package for DotNetCore NPOI](https://www.nuget.org/packages/DotNetCore.NPOI)
 
 # Code
 
