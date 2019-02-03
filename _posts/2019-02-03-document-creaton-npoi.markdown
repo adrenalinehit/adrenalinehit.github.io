@@ -21,6 +21,11 @@ Looked into various libraries, but the favorite was NPOI, simply because:
 * lots of examples online
 * works in dotnet core land
 
+# Credits / resources
+
+[Java version of the replacer](https://stackoverflow.com/questions/22268898/replacing-a-text-in-apache-poi-xwpf)
+[Nuget package for DotNetCore NPOI](https://www.nuget.org/packages/DotNetCore.NPOI)
+
 # Code
 
 On github [here](https://github.com/adrenalinehit/npoi-example)
