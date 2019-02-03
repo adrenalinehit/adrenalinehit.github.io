@@ -5,6 +5,8 @@ date:   2019-02-03 12:20:00 +0100
 categories: dotnet hacking npoi documents
 ---
 
+Write up of creating documents using NPOI and dotnet core.
+
 # Challenge
 
 * Create a word document (doc, docx etc) server side from a template document
