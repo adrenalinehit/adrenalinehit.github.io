@@ -19,4 +19,4 @@ https://www.visitpeakdistrict.com/inspiration/blog/read/2020/08/everything-you-n
 
 Progress...
 
-![image](/_assets/img/end-of-first-tutorial.png)
+![image](_site/assets/img/end-of-first-tutorial.png)
