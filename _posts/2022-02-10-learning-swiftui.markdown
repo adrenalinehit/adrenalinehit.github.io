@@ -17,9 +17,19 @@ Here: https://developer.apple.com/tutorials/swiftui
 
 https://www.visitpeakdistrict.com/inspiration/blog/read/2020/08/everything-you-need-to-know-about-stanage-edge-b143 for the pictures
 
+## Step 1
+(Feb 10th)
+
+https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+
 Progress...
 
 
 ![image](/_assets/end-of-first-tutorial.png)
 
 ![image](/_assets/img/end-of-first-tutorial.png)
+
+## Step 2
+(sometime soon....)
+
+https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
