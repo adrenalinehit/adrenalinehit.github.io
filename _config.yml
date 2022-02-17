@@ -34,6 +34,10 @@ plugins:
 #kramdown:
 #  parse_block_html: true
 
+assets:
+    sources:
+        - _assets/images
+
 google_analytics: UA-125142778-1
 show_excerpts: true
 # Exclude from processing.
