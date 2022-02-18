@@ -40,3 +40,7 @@ Progress...
 So, we continue...
 
 https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
+
+![]({{"/assets/images/list-view.png"}} )
+![]({{"/assets/images/detail.png"}} )
+![]({{"/assets/images/xcode-error.png"}} )

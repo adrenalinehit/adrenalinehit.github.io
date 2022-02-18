@@ -30,6 +30,15 @@ plugins:
   - jekyll-feed
   - jekyll-twitter-plugin
   - jekyll-gist
+  - jekyll-responsive-image
+
+responsive_image:
+  cache: true
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
 
 #kramdown:
 #  parse_block_html: true
