@@ -31,7 +31,7 @@ So, props to https://www.visitpeakdistrict.com/inspiration/blog/read/2020/08/eve
 
 Progress...
 
-![image](/assets/images/end-of-first-tutorial.png)
+![]({{"assets/images/end-of-first-tutorial.png"}} )
 
 
 ## Step 2
