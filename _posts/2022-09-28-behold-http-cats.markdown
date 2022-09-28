@@ -7,7 +7,7 @@ categories: apps ios
 
 A write up of getting an app into the App Store®...
 
-[![Preview picture of app]({{"/assets/images/preview.png"}})]
+![Preview picture of app]({{"/assets/images/preview.png"}})
 
 ## Why?
 
