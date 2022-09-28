@@ -7,6 +7,8 @@ categories: apps ios
 
 A write up of getting an app into the App Store®...
 
+[![Preview picture of app]({{"/assets/images/preview.png"}})]
+
 ## Why?
 
 So, if you're a keen reader of this blog, you'll not have failed to notice that I've been learning SwiftUI®. (If you're not a keen reader of this blog...where have you been?! ;-) )
