@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "My First AppStore App"
-date:   2022-09-28 20:00:00 +0100
+title: "My First AppStore App"
+date: 2022-09-28 20:00:00 +0100
 categories: swift swiftui xcodecloud xcode appstore ios app httpcodes
 ---
 
-# My First App - My experience so fa
+# My First App - My experience so far
 
 ## Why?
 
@@ -66,6 +66,10 @@ Jennifer Munro-Brown for convincing me to write this up.
 Many other colleagues who have had to put up with me talking about the app for a few months now.
 
 My employer for providing time dedicated to Learning and Development. (we're hiring - https://www.skybetcareers.com)
+
+Fili Wiese for the images from https://httpcats.com https://http.dog and https://http.garden.
+
+https://unsplash.com/@anushabarwa for the logo photo https://unsplash.com/photos/ppKcYi1CXcI
 
 ## Would you like to download the app?
 
