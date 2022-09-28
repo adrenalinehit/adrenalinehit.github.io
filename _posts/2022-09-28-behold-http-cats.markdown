@@ -5,11 +5,11 @@ date: 2022-09-28 20:00:00 +0100
 categories: swift swiftui xcodecloud xcode appstore ios app httpcodes
 ---
 
-A write up of getting an app into the App Store...
+A write up of getting an app into the App Store®...
 
 ## Why?
 
-So, if you're a keen reader of this blog, you'll not have failed to notice that I've been learning SwiftUI. (If you're not a keen reader of this blog...where have you been?! ;-) )
+So, if you're a keen reader of this blog, you'll not have failed to notice that I've been learning SwiftUI®. (If you're not a keen reader of this blog...where have you been?! ;-) )
 
 I'm fortunate to be part of the native app development teams at SkyBet. We're always looking to make our apps better and innovate in the latest technologies. As a leader I think it's important to "practice what you preach" and be at least familiar with the ecosystem in which you play a (small) part.
 
@@ -19,9 +19,9 @@ Those who know me will be aware that I'm an Android user. You might be wondering
 
 ## How?
 
-- Get access to a Mac laptop (seems obvious, but I'm fortunate to have this - I'm aware it's a high barrier to entry. You can learn and compile Swift online here http://online.swiftplayground.run/ without a Mac)
+- Get access to a Mac® laptop (seems obvious, but I'm fortunate to have this - I'm aware it's a high barrier to entry. You can learn and compile Swift® online here http://online.swiftplayground.run/ without a Mac)
   
-- Learnt SwiftUI - following the Apple tutorials. (https://developer.apple.com/tutorials/swiftui)
+- Learnt SwiftUI - following the Apple® tutorials. (https://developer.apple.com/tutorials/swiftui)
   
 - Thought up a simple idea for an app; it helped that the images had an API of sorts to download them (credit to Fili Wiese for putting these sites together)
   
