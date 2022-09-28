@@ -25,12 +25,13 @@ disqus:
   shortname: adrenalinehitblog
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-twitter-plugin
   - jekyll-gist
   - jekyll-responsive-image
+  - jekyll-remote-theme
 
 responsive_image:
   cache: true
