@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "My First AppStore App"
+title: "My First AppStore App - Update"
 date: 2022-09-28 20:00:00 +0100
 categories: swift swiftui xcodecloud xcode appstore ios app httpcodes
 ---
 
-# My First App - My experience so far
+A write up of getting an app into the App Store...
 
 ## Why?
 
@@ -20,12 +20,19 @@ Those who know me will be aware that I'm an Android user. You might be wondering
 ## How?
 
 - Get access to a Mac laptop (seems obvious, but I'm fortunate to have this - I'm aware it's a high barrier to entry. You can learn and compile Swift online here http://online.swiftplayground.run/ without a Mac)
+  
 - Learnt SwiftUI - following the Apple tutorials. (https://developer.apple.com/tutorials/swiftui)
+  
 - Thought up a simple idea for an app; it helped that the images had an API of sorts to download them (credit to Fili Wiese for putting these sites together)
+  
 - Developed the app (complete with _some_ Unit and UI tests - you can see them for yourself in the code; I need to add more.)
+  
 - Became a fully fledged Apple developer (https://developer.apple.com/)
+  
 - I was already familiar with the App Stores processes, but I still had to fill out my own Privacy Policy and generate App Store assets (this is hard work for a non-designer!).
+  
 - Submitted to Apple after frequent Testflight releases
+  
 - Dealt with 3 app review rejections (I'd forgotten to include the *required* capabilities section https://developer.apple.com/support/required-device-capabilities/) (`<rant>`why, Apple, if it's a required element, don't you prompt before wasting your review team's time? Or prevent installation of the app on a simulator? `</rant>`)
 
 
@@ -34,16 +41,28 @@ Those who know me will be aware that I'm an Android user. You might be wondering
 Lots!
 
 - Swift (a small fraction I'm sure)
+  
 - SwiftUI (scratched the surface!)
+  
 - Xcode Cloud (this is an amazing *free* provision from Apple!)
+  
 - Bitrise (although I didn't use it for the majority of the builds)
+  
 - Refamiliarised myself with Github (especially around tracking a project)
+  
 - The Apple ecosystem - resources, communities
+  
 - Dealing with frustration and set back (and keeping on)
-- Using Xcode (a tiny proportion of it - I'm still very much a beginner)
+  
+- More about using Xcode (a tiny proportion of it - I'm still very much a beginner)
+  
 - Design (_I'm definitely not a designer_)
+  
 - Making connections with people
+  
 - Building an app is fun!
+  
+- ... & probably more that I've already forgotten
 
 ## Where next?
 
@@ -61,7 +80,7 @@ Matt Glover for his contributions and beta testing & also for creating Code Club
 
 Matt Gallagher for his beta testing and encouragement.
 
-Jennifer Munro-Brown for convincing me to write this up.
+Jennifer Munro-Brown for encouraging me to write this up.
 
 Many other colleagues who have had to put up with me talking about the app for a few months now.
 
