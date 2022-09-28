@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "My First AppStore App - Update"
+title: "My First App - Update"
 date: 2022-09-28 20:00:00 +0100
 categories: apps ios
 ---
 
-A write up of getting an app into the App Store®...
+A write up of getting an app into the Apple® App Store®...
 
 ![Preview picture of app]({{"/assets/images/preview.png"}})
 
