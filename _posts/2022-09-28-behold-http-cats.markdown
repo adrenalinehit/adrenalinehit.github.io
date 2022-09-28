@@ -92,7 +92,7 @@ https://unsplash.com/@anushabarwa for the logo photo https://unsplash.com/photos
 
 ## Would you like to download the app?
 
-![Download on App Store]({{"/assets/images/download-on-appstore.svg"}})(https://apps.apple.com/us/app/http-codes/id1626500016)
+[![Download on App Store]({{"/assets/images/download-on-appstore.svg"}})](https://apps.apple.com/us/app/http-codes/id1626500016)
 
 ## Anything else you'd like to know?
 
