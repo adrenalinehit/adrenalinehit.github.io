@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "IOT Temperature Sensor"
+date:   2018-09-16 21:00:00 +0100
+categories: hacking iot
+---
+
 A write up of my raspberry pi home made temperature sensor that logs data to the cloud so that it can be visualised.
 
 # Raspberry Pi based temperature sensor

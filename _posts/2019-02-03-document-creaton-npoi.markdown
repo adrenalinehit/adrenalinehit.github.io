@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating documents using NPOI"
 date:   2019-02-03 12:20:00 +0100
-categories: dotnet hacking npoi documents
+categories: hacking dotnet
 ---
 
 Write up of creating documents using NPOI and dotnet core.

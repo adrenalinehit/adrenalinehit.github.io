@@ -2,7 +2,7 @@
 layout: post
 title:  "SignalR dotnet core"
 date:   2018-09-01 21:00:00 +0100
-categories: dotnet hacking
+categories: hacking dotnet
 ---
 Some suff will follow on dotnet core and ASP.NET core SignalR changes.
 

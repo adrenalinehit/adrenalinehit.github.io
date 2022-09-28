@@ -2,7 +2,7 @@
 layout: post
 title: "My First AppStore App - Update"
 date: 2022-09-28 20:00:00 +0100
-categories: swift swiftui xcodecloud xcode appstore ios app httpcodes
+categories: apps ios
 ---
 
 A write up of getting an app into the App Store®...
