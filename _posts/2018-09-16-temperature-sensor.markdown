@@ -17,11 +17,12 @@ A write up of my raspberry pi home made temperature sensor that logs data to the
 - python ([FluentMetrics](https://github.com/awslabs/cloudwatch-fluent-metrics) in particular)
 - GPIO pins and a bit of soldering
 - AWS
-- ...more cloud providers to follow...
+- Some custom code to log ([Code here](https://github.com/adrenalinehit/HomeTempChecker/blob/main/templogger.py)
 
 # Pictures
 
-_to follow when's there's a bit more data_
+![Pin Out]({{"/assets/images/288466632-feba9cf9-f83d-4c81-bfc5-4a6d95dba968.jpg"}})
+![AWS logged]({{"/assets/images/templog.png"}})
 
 # Credits
 
