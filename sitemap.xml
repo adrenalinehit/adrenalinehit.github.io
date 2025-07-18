@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://adrenalinehit.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://adrenalinehit.github.io/</loc>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/adventures-in-iot.html</loc>
+<lastmod>2025-07-18T15:21:32+01:00</lastmod>
+<image:image>
+<image:loc>https://adrenalinehit.github.io/assets/images/288466632-feba9cf9-f83d-4c81-bfc5-4a6d95dba968.jpg</image:loc>
+<image:title><![CDATA[Pin Out]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://adrenalinehit.github.io/assets/images/templog.png</image:loc>
+<image:title><![CDATA[AWS logged]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/are-people-more-than-resources.html</loc>
+<lastmod>2025-07-18T15:00:11+01:00</lastmod>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/cat-codes-my-first-apple-app.html</loc>
+<lastmod>2025-07-18T15:20:37+01:00</lastmod>
+<image:image>
+<image:loc>https://adrenalinehit.github.io/assets/images/preview.png</image:loc>
+<image:title><![CDATA[Preview picture of app]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://adrenalinehit.github.io/assets/images/download-on-appstore.svg</image:loc>
+<image:title><![CDATA[Download on App Store]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/five-star-service.html</loc>
+<lastmod>2025-07-18T15:00:40+01:00</lastmod>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/getting-the-message.html</loc>
+<lastmod>2025-07-18T15:12:38+01:00</lastmod>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/http-codes-privacy-policy.html</loc>
+<lastmod>2025-07-18T15:22:25+01:00</lastmod>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/one-developer-projects.html</loc>
+<lastmod>2025-07-18T15:00:46+01:00</lastmod>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/page/2/</loc>
+</url>
+<url>
+<loc>https://adrenalinehit.github.io/to-manage-or-not-to-manage-that-is-the-question.html</loc>
+<lastmod>2025-07-18T15:00:56+01:00</lastmod>
+</url>
+</urlset>
