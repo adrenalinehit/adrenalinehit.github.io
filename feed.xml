@@ -3,12 +3,68 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2025-07-18T15:21:32+01:00</updated>
+    <updated>2025-09-02T17:00:18+01:00</updated>
     <author>
         <name>Nick</name>
     </author>
     <id>https://adrenalinehit.github.io</id>
 
+    <entry>
+        <title>How I learnt to juggle</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/how-i-learnt-to-juggle.html"/>
+        <id>https://adrenalinehit.github.io/how-i-learnt-to-juggle.html</id>
+            <category term="people"/>
+            <category term="leadership"/>
+            <category term="career"/>
+
+        <updated>2025-09-02T17:00:02+01:00</updated>
+            <summary>
+                <![CDATA[
+                    When was the last time you learnt a new skill? We were recently challenged to learn something new. Something we’d never previously done. Yes, a “Lockdown Challenge”! I’ve always wanted to be able to juggle. I quite enjoy the diabolo, so juggling seemed like another great circus&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><img loading="lazy" src="https://media.licdn.com/dms/image/v2/C4D12AQHksLofiIEr_w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1602588413928?e=1762387200&amp;v=beta&amp;t=4rWL3sPrHnaejJ6Hb7gAGuVy9GsTPGkXAhYiLC3TT60" alt="My juggling balls from https://www.amazon.co.uk/gp/product/B07VZLV9MT" data-is-external-image="true"></p>
+<p>When was the last time you learnt a new skill?</p>
+<p>We were recently challenged to learn something new. Something we’d never previously done. Yes, a “Lockdown Challenge”!</p>
+<p>I’ve always wanted to be able to juggle. I quite enjoy the diabolo, so juggling seemed like another great circus style addition to my repertoire.</p>
+<h3>Breaking down the learning process</h3>
+<p>I jumped straight in and bought a set of juggling balls. Nice and cheap from Amazon. They arrived &amp; I was excited. How hard can this juggling thing be, I thought?</p>
+<p>Yep, the first of many false starts - I thought it’d be simple! I mean, I’ve watched people juggling before!</p>
+<blockquote>Top Tip - take instruction! (<a href="https://www.youtube.com/watch?v=dCYDZDlcO6g" target="_blank" rel="noopener">In my case a video on YouTube that was clear and visual</a>)</blockquote>
+<h3>My Learning process</h3>
+<ol>
+<li>Take instruction</li>
+<li>Start simple</li>
+<li>Build up methodically</li>
+<li>Master the individual steps</li>
+<li>Put it together</li>
+<li>Practice</li>
+</ol>
+<p>In time, I developed some muscle memory. The juggling process is slowly becoming familiar. I can now juggle three balls…there’s 5 in the box!</p>
+<h3>Learnings</h3>
+<blockquote>There’s no shortcuts - learning something new takes time</blockquote>
+<p>I was reminded of a few other interesting things on the journey to learning how to juggle.</p>
+<ol>
+<li>There’s no shortcuts - learning something new takes time; you can’t expect to be an expert overnight.</li>
+<li>You might need to unlearn some previous behaviour. In this case:</li>
+</ol>
+<ul>
+<li>I had to learn to throw the ball out of my hand - I was struggling to let go of the ball at the right time!</li>
+<li>I had to learn to let the ball come to me, rather than chasing the ball to catch it.</li>
+<li>Counterintuitively, giving yourself more time by throwing the ball higher made things easier.</li>
+</ul>
+<blockquote>What’s your learning process?</blockquote>
+<p>What did you learn in lockdown? What’s your learning process? Let me know. Thanks for reading.</p>
+<p> </p>
+<p><em>First published on <a href="https://www.linkedin.com/pulse/how-i-learnt-juggle-nick-payne" target="_blank" rel="noopener noreferrer">LinkedIn</a> during that strange time called the Covid-19 pandemic.</em></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Adventures in IoT</title>
         <author>
