@@ -3,7 +3,7 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2025-09-04T13:46:50+01:00</updated>
+    <updated>2025-09-04T13:51:23+01:00</updated>
     <author>
         <name>Nick</name>
     </author>
@@ -58,18 +58,14 @@
             <![CDATA[
                 <p>Safe (ish!) experimentation and continuous improvements are key to healthy codebases. We discussed <a href="https://github.com/scientistproject/Scientist.net">https://github.com/scientistproject/Scientist.net</a> yesterday, so I thought I'd get Cursor using GPT-5 to knock up a swift dotnet8 example.</p>
 <p>A few birds with one stone as it were. AI, latest model and cursor version trial, and a dotnet library that I wasn't familiar with. Win win.</p>
-<p>Set up the experiment with the GET method.</p>
+<p> Set up the experiment within the GET method.</p>
 <pre class="language-csharp"><code>app.MapGet("/api/data/randomdata", () =&gt;
 {
     var result = Scientist.Science&lt;string&gt;("random-data-experiment", experiment =&gt;
     {
-        experiment.Use(() =&gt;</code></pre>
-<p>In this case, I chose to return a static json response or read some json from a file.</p>
-<pre class="language-csharp"><code>app.MapGet("/api/data/randomdata", () =&gt;
-{
-    var result = Scientist.Science&lt;string&gt;("random-data-experiment", experiment =&gt;
-    {
-        experiment.Use(() =&gt;
+</code></pre>
+<p>In this case, I chose to return a static json response as my control:</p>
+<pre class="language-csharp"><code>        experiment.Use(() =&gt;
         {
             var data = new
             {
@@ -80,15 +76,13 @@
             return JsonSerializer.Serialize(data);
         });
 
-        experiment.Try(() =&gt;
+    });</code></pre>
+<p>and return some json read from a file as the experiment:</p>
+<pre class="language-csharp"><code>        experiment.Try(() =&gt;
         {
             var filePath = Path.Combine(app.Environment.ContentRootPath, "Data", "sample.json");
             return System.IO.File.ReadAllText(filePath);
-        });
-    });
-
-    return Results.Content(result, "application/json");
-})</code></pre>
+        });</code></pre>
 <p>Here's the console outputter from earlier.</p>
 <pre class="language-csharp"><code>using System;
 using System.Threading.Tasks;
