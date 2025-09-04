@@ -3,12 +3,145 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2025-09-02T17:02:58+01:00</updated>
+    <updated>2025-09-04T13:46:50+01:00</updated>
     <author>
         <name>Nick</name>
     </author>
     <id>https://adrenalinehit.github.io</id>
 
+    <entry>
+        <title>Cars!</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/cars.html"/>
+        <id>https://adrenalinehit.github.io/cars.html</id>
+            <category term="random"/>
+
+        <updated>2025-09-04T13:43:23+01:00</updated>
+            <summary>
+                <![CDATA[
+                    These cars make me feel something! (also testing out Publii core lightbox plugin)
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/Porsche_959_-_Frontansicht_2_21._Marz_2013_Dusseldorf.jpg" data-size="3445x2063"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/Porsche_959_-_Frontansicht_2_21._Marz_2013_Dusseldorf-thumbnail.jpg" alt="" width="720" height="431"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/Aston-Martin-DB9-Alternative-Classic-5.webp" data-size="1400x933"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/Aston-Martin-DB9-Alternative-Classic-5-thumbnail.webp" alt="" width="720" height="480"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/Porsche_20911_20Targa_204S_20rear.jpg" data-size="2217x1056"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/Porsche_20911_20Targa_204S_20rear-thumbnail.jpg" alt="" width="720" height="343"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/2020-volvo-s90-t6-awd-r-design-ogi1.webp" data-size="1200x675"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/2020-volvo-s90-t6-awd-r-design-ogi1-thumbnail.webp" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/Lotus_Carlton.png" data-size="700x434"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/Lotus_Carlton-thumbnail.png" alt="" width="700" height="434"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/celebrating20yearsofaperformanceicontherenaultcliov61612202010-1.jpg" data-size="1920x1080"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/celebrating20yearsofaperformanceicontherenaultcliov61612202010-1-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/13/gallery/30yrVolvo850_05.jpg" data-size="1200x675"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/13/gallery/30yrVolvo850_05-thumbnail.jpg" alt="" width="720" height="405"></a></figure>
+</div></div>
+<p>These cars make me <em>feel</em> something! (also testing out Publii core lightbox plugin)</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Experimentation, dotnet style</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/experimentation-dotnet-style.html"/>
+        <id>https://adrenalinehit.github.io/experimentation-dotnet-style.html</id>
+            <category term="engineering"/>
+
+        <updated>2025-09-04T13:36:21+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Safe (ish!) experimentation and continuous improvements are key to healthy codebases. We discussed https://github.com/scientistproject/Scientist.net yesterday, so I thought I'd get Cursor using GPT-5 to knock up a swift dotnet8 example. A few birds with one stone as it were. AI, latest model and cursor version&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Safe (ish!) experimentation and continuous improvements are key to healthy codebases. We discussed <a href="https://github.com/scientistproject/Scientist.net">https://github.com/scientistproject/Scientist.net</a> yesterday, so I thought I'd get Cursor using GPT-5 to knock up a swift dotnet8 example.</p>
+<p>A few birds with one stone as it were. AI, latest model and cursor version trial, and a dotnet library that I wasn't familiar with. Win win.</p>
+<p>Set up the experiment with the GET method.</p>
+<pre class="language-csharp"><code>app.MapGet("/api/data/randomdata", () =&gt;
+{
+    var result = Scientist.Science&lt;string&gt;("random-data-experiment", experiment =&gt;
+    {
+        experiment.Use(() =&gt;</code></pre>
+<p>In this case, I chose to return a static json response or read some json from a file.</p>
+<pre class="language-csharp"><code>app.MapGet("/api/data/randomdata", () =&gt;
+{
+    var result = Scientist.Science&lt;string&gt;("random-data-experiment", experiment =&gt;
+    {
+        experiment.Use(() =&gt;
+        {
+            var data = new
+            {
+                Id = Random.Shared.Next(1, 1000),
+                Name = $"Item{Random.Shared.Next(1, 100)}",
+                Timestamp = DateTime.UtcNow
+            };
+            return JsonSerializer.Serialize(data);
+        });
+
+        experiment.Try(() =&gt;
+        {
+            var filePath = Path.Combine(app.Environment.ContentRootPath, "Data", "sample.json");
+            return System.IO.File.ReadAllText(filePath);
+        });
+    });
+
+    return Results.Content(result, "application/json");
+})</code></pre>
+<p>Here's the console outputter from earlier.</p>
+<pre class="language-csharp"><code>using System;
+using System.Threading.Tasks;
+using GitHub;
+
+namespace ScientistDemo.Infrastructure
+{
+	public class ConsoleResultPublisher : IResultPublisher
+	{
+		public Task Publish&lt;T, TClean&gt;(Result&lt;T, TClean&gt; result)
+		{
+			Console.WriteLine($"[Scientist] Experiment: {result.ExperimentName}");
+			Console.WriteLine($"[Scientist] Matched: {result.Matched}");
+			Console.WriteLine($"[Scientist] Control: value={Format(result.Control.Value)}, duration={result.Control.Duration}, exception={(result.Control.Exception == null ? "none" : result.Control.Exception.GetType().Name)}");
+			foreach (var candidate in result.Candidates)
+			{
+				Console.WriteLine($"[Scientist] Candidate '{candidate.Name}': value={Format(candidate.Value)}, duration={candidate.Duration}, exception={(candidate.Exception == null ? "none" : candidate.Exception.GetType().Name)}");
+			}
+			if (!result.Matched)
+			{
+				Console.WriteLine("[Scientist] Mismatch detected!");
+			}
+			return Task.CompletedTask;
+		}
+
+		private static string? Format(object? value)
+		{
+			return value?.ToString();
+		}
+	}
+}</code></pre>
+<p>By adding the following, we can actually get the output logged somewhere we can read it:</p>
+<pre class="language-csharp"><code>// Configure Scientist to publish results to console
+Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
+<p>Here's the console output.</p>
+<pre class="language-bash"><code>[Scientist] Experiment: random-data-experiment
+[Scientist] Matched: False
+[Scientist] Control: value={"Id":754,"Name":"Item50","Timestamp":"2025-09-04T10:59:44.315161Z"}, duration=00:00:00.0074269, exception=none
+[Scientist] Candidate 'candidate': value={
+    "Id": 1,
+    "Name": "SampleItem",
+    "Timestamp": "2025-09-04T10:44:17Z"
+}
+
+, duration=00:00:00.0008843, exception=none
+[Scientist] Mismatch detected!</code></pre>
+<p>Full code here: <a href="https://github.com/adrenalinehit/dotnet-scientest/tree/main">https://github.com/adrenalinehit/dotnet-scientest/tree/main</a></p>
+<p>There's plenty more scientist.net can do. Do check out its documentation on github.</p>
+<p>Thanks for reading.</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>A celebration of mobile app development &amp; shipping</title>
         <author>
@@ -649,41 +782,6 @@
 </ol>
 <p>If you have a complaints process, would you be happy being it’s subject? If not, why not?</p><p>Do you put the client first &amp; make them feel valued all the time? Do you keep them informed?</p><p>Thanks for reading.</p><p>(first published on Medium 25th Feb 2019 - pre-ai revolution)
 <a href="https://medium.com/@adrenalinehit/five-star-service-2a6d04b2d5df">https://medium.com/@adrenalinehit/five-star-service-2a6d04b2d5df</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>One Developer Projects</title>
-        <author>
-            <name>Nick</name>
-        </author>
-        <link href="https://adrenalinehit.github.io/one-developer-projects.html"/>
-        <id>https://adrenalinehit.github.io/one-developer-projects.html</id>
-            <category term="engineering"/>
-
-        <updated>2025-07-18T14:37:57+01:00</updated>
-            <summary>
-                <![CDATA[
-                    A “one developer project” — with great freedom comes great responsibility. If you find yourself in this situation, what should you do to ensure that the next developer can pick up where you left off? (Bearing in mind this developer could be you sometime in&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>A “one developer project” — with great freedom comes great responsibility.</p><p>If you find yourself in this situation, what should you do to ensure that the next developer can pick up where you left off? (Bearing in mind this developer could be you sometime in the future!)</p><h1 id="whats-wrong-with-a-one-developer-project">What’s wrong with a one developer project?</h1>
-<p>In a typical software house environment, a delivery team might comprise a couple of developers, a tester, a devops guru, some form of analyst and a “project manager”. (Quotes in place due to “agile” sympathies…not getting involved in that discussion here!)</p><p>That’s a lot of hats to wear for one person and a lot of knowledge to retain (or frequently Google!).</p><p>I’ve worked with people who have been able to juggle these roles. They are few and far between. Specialities are inevitable. Dislike of certain areas are too.</p><h1 id="so-what-can-go-wrong">So, what can go wrong?</h1>
-<p>There’s often such a focus on delivery, that documentation, unit tests and code reviews disappear without a trace. Short term, this won’t be a problem…just wait for the call 2 months after go live when the customer wonders why the site has gone down.</p><p>The perceived cost savings of having a 1 dev team are clear to see. What happens when they go off sick or on holiday? No one knows anything about the project, the status of it or what the developer was thinking. Handover notes were long since thrown out by the cleaner.</p><p>Another set of eyes can often spot issues and propose simpler, more maintainable solutions. Code-blindness can easily set in when it’s just you staring at the same method for hours on end, second guessing yourself.</p><h1 id="what-should-you-do-if-theres-no-choice">What should you do if there’s no choice?</h1>
-<p>One word: discipline. Run the project in a way that you would be happy to inherit it.</p><p>discipline: the practice of training people to obey rules or a code of behaviour, using punishment to correct disobedience.</p><p>To be clear, I’m definitely not advocating physical punishment here…the maintainability headache should serve as punishment enough!</p><p>What does discipline mean here?</p><p>In something of an order of preference, but entirely non-exhaustively:</p><ul>
-<li>Use source control (git being the defacto standard these days)</li>
-<li>Code with standards enforced (amongst others resharper, stylecop in C# projects)</li>
-<li>Document progress &amp; technical decisions (including any dependencies needed to make it work, maybe even taking copies if they’re super important)</li>
-<li>Ensure the project builds regularly on a build server somewhere (not just your machine!)</li>
-<li>Set up and document regular meetings with the client where you demonstrate progress (changes of priority and direction happen!)</li>
-<li>Ensure you’re tracking time/effort spent on the project. This might be important for getting “rewarded”, whether that’s payment or some other compensation.</li>
-</ul>
-<h1 id="are-these-projects-really-so-bad">Are these projects really so bad?</h1>
-<p>I’ve painted quite a bleak picture so far. Things aren’t all bad.</p><p>You could treat your one developer project as your favourite side-project - meaning you get to choose the language, the frameworks and the infrastructure. You’ll inevitably learn new skills.</p><p>You’ll get to interface directly with the client (if it’s not your favourite side-project!) - there should be less chance of confusion or ambiguity around requirements.</p><p>You’ll not have any distractions from (now unnecessary) meetings. Delivery might even be quicker due to no merge conflicts, database change synchronisation or enforced design patterns.</p><p>You’ll have to stick to your estimates (&amp; budget) and deliver.</p><h1 id="would-i-recommend-it">Would I recommend it?</h1>
-<p>Simply put, no. I believe that during it’s lifecycle, a project needs input from a variety of disciplines, all of which have complementary effects on it’s chance of success. Left to one person, luck plays more of a part than I’d be happy with.</p><p>What’s been your experience of one developer projects? Let me know in the comments.</p><p>Thanks for reading.</p><p>(first published on Medium here on 25th Feb 2019 (pre-ai revolution!))
-<a href="https://medium.com/@adrenalinehit/one-dev-projects-4ed9d23c3afa">https://medium.com/@adrenalinehit/one-dev-projects-4ed9d23c3afa</a></p>
             ]]>
         </content>
     </entry>
