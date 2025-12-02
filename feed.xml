@@ -3,12 +3,78 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2025-09-04T13:51:23+01:00</updated>
+    <updated>2025-12-02T14:27:17+00:00</updated>
     <author>
         <name>Nick</name>
     </author>
     <id>https://adrenalinehit.github.io</id>
 
+    <entry>
+        <title>Is Modern Software development still the Ultimate Team Sport?</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/is-modern-software-development-still-the-ultimate-team-sport.html"/>
+        <id>https://adrenalinehit.github.io/is-modern-software-development-still-the-ultimate-team-sport.html</id>
+            <category term="people"/>
+            <category term="leadership"/>
+            <category term="engineering"/>
+            <category term="customer"/>
+
+        <updated>2025-12-02T14:27:17+00:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    I’ve been watching the latest developments in software development closely, and with some interest. I’m seeing parallels between my early career and the current technologies being touted as the next best thing. Chunky (AI-written) specifications and (super crazy fast) waterfall development anyone? For decades, the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><span style="font-weight: 400;">I’ve been watching the latest developments in software development closely, and with some interest. I’m seeing parallels between my early career and the current technologies being touted as the next best thing. Chunky (AI-written) specifications and (super crazy fast) waterfall development anyone?</span></p>
+<p><span style="font-weight: 400;">For decades, the promoted stereotype of software development was a loud, chaotic team sport. We pictured war rooms covered in whiteboard scribbles, late-night pizza fueled hackathons, and open-plan offices buzzing with synchronous chatter.</span></p>
+<p><span style="font-weight: 400;">Today, walk into a modern tech company, or indeed log into their Slack workspace, and it feels very different. It’s quieter. Engineers are remote, communicating via asynchronous pull request comments. AI assistants could be writing significant chunks of boilerplate code. A solitary "indie hacker" can now launch a profitable SaaS product in a weekend using low-code tools (or so the internet would have you believe!).</span></p>
+<p><span style="font-weight: 400;">This shifting landscape begs the question: </span><strong>Is software development still a team sport?</strong></p>
+<p><span style="font-weight: 400;">The short answer is </span><strong>yes</strong><span style="font-weight: 400;">. But the definition of "the team", the rules of the game and the playing field itself are undergoing a radical transformation. The days of throwing engineers at a coding problem are over. Today, it’s a sport of hyper-coordination, cross-functional friction, and elite, smaller units.</span></p>
+<h3><strong>1. The New Rules: Why Collaboration is Non-Negotiable</strong></h3>
+<p><span style="font-weight: 400;">It is tempting to look at the productivity gains of individual engineers using AI tools like GitHub Copilot and conclude that teams are becoming obsolete. This misses the bigger picture. While writing code has become easier, building </span><i><span style="font-weight: 400;">systems</span></i><span style="font-weight: 400;"> has become infinitely more complex.</span></p>
+<p><strong>The Cognitive Load Problem</strong></p>
+<p><span style="font-weight: 400;">Twenty years ago, a "Full Stack Developer" could realistically master an entire stack. Today, a standard enterprise application involves microservices, container orchestration, dizzying cloud infrastructure options, complex front-end frameworks, and intricate CI/CD pipelines, not to mention the additional prerequisite mobile app.</span></p>
+<p><span style="font-weight: 400;">It is cognitively impossible for one person to be an expert in all these domains. We need teams not just for extra hands, but for specialised brains. We need the security specialist, the DevOps engineer, and the UI expert to come together like a film crew specialising intensely and collaborating smoothly.</span></p>
+<p><strong>From Scrum to Relay Race</strong></p>
+<p><span style="font-weight: 400;">The "sport" used to look like a rugby match with everyone moving together in real-time. Now, remote-first cultures have turned it into a high-speed relay race. The focus has shifted from synchronous chatter to asynchronous precision. The best teams win not by talking the loudest in a stand-up, but by communicating clearly whether that’s through written documentation, detailed Git commits, and/or precise specs. There’s potentially a future discussion here about how modern AI tools that seem to lend themselves to solo efforts can be used effectively by teams.</span></p>
+<h3><strong>2. Redefining "The Team": Enter the Trio</strong></h3>
+<p><span style="font-weight: 400;">Perhaps the biggest shift in modern development is realising that if you only look at the developers, you are missing half the team.</span></p>
+<p><span style="font-weight: 400;">In the old "waterfall" days, development was a series of handoffs. Product wrote requirements and tossed them over the wall to Design. Design made mockups and tossed them to Engineering. Engineering wrote code and tossed it over to the Ops team. This model is obsolete.</span></p>
+<p><span style="font-weight: 400;">Today, high-performing software is built by a </span><strong>cross-functional Product Trio</strong><span style="font-weight: 400;"> working simultaneously. The "sport" is the constant, healthy tension between three distinct perspectives:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><strong>Product (The "What"):</strong><span style="font-weight: 400;"> Focuses on </span><strong>Viability</strong><span style="font-weight: 400;">. Does this solve a real business problem that customers will pay for?</span></li>
+<li style="font-weight: 400;" aria-level="1"><strong>Design (The "How it looks/feels"):</strong><span style="font-weight: 400;"> Focuses on </span><strong>Desirability &amp; Usability</strong><span style="font-weight: 400;">. Do users actually want to use this, and can they figure it out?</span></li>
+<li style="font-weight: 400;" aria-level="1"><strong>Engineering (The "How it works"):</strong><span style="font-weight: 400;"> Focuses on </span><strong>Feasibility</strong><span style="font-weight: 400;">. Can we build this securely, scalably, and efficiently?</span></li>
+</ul>
+<p><strong>Friction Is the Gameplay</strong></p>
+<p><span style="font-weight: 400;">In a solo endeavor, you make all the compromises yourself in a vacuum. In a team sport, the friction leads to better outcomes.</span></p>
+<p><span style="font-weight: 400;">An engineer pushes back on a PM's feature request because it will ruin site performance. A designer pushes back on an engineer's shortcut because it degrades the user experience. This negotiation is the game. Without the team, there is no one to check your blind spots.</span></p>
+<h3><strong>3. The Roster Size: The Magic of the "Two-Pizza Team"</strong></h3>
+<p><span style="font-weight: 400;">If the "Product Trio" (Product Lead, Design Lead, Engineering Lead) are the captains deciding the strategy, how big is the actual team?</span></p>
+<p><span style="font-weight: 400;">In the modern era, massive teams are viewed as a liability. The industry standard has converged around Amazon’s famous </span><strong>"Two-Pizza Rule"</strong><span style="font-weight: 400;">: </span><i><span style="font-weight: 400;">If a team cannot be fed by two pizzas, it is too large. (Clearly, never worked in a team with me on it!)</span></i></p>
+<p><span style="font-weight: 400;">This usually translates to a squad of </span><strong>5 to 9 people</strong><span style="font-weight: 400;">:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">1 Product Manager</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">1 Product Designer</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">3-6 Engineers (with varying specialisations)</span></li>
+</ul>
+<p><strong>Why is this the sweet spot?</strong></p>
+<p><span style="font-weight: 400;">Any smaller (a team of 2-3), and you lack redundancy. If one person gets sick or goes on holiday, velocity hits zero. You also lack the skill diversity needed for complex stacks.</span></p>
+<p><span style="font-weight: 400;">Any larger (12+ people), and communication overhead cripples you. Consensus becomes impossible, meetings drag on, and psychological safety diminishes; quiet voices with good ideas get drowned out.</span></p>
+<p><span style="font-weight: 400;">If you are building something massive like Netflix or Uber, you don't build a 500-person team; you build a </span><i><span style="font-weight: 400;">Team of Teams</span></i><span style="font-weight: 400;">. You create dozens of autonomous two-pizza squads, each owning a specific slice of the product domain.</span></p>
+<h3><strong>The Verdict: From Brute Force to Coordination</strong></h3>
+<p><span style="font-weight: 400;">Software development has matured. We have moved away from the sport of brute force - measuring success by hours worked or lines of code written - toward a sport of coordination, measured by customer outcomes and system reliability.</span></p>
+<p><span style="font-weight: 400;">Equally, the lone wolf developer building an enterprise system is a myth of the past. But the bloated, bureaucratic IT department of the 90s is also dying.</span></p>
+<p><span style="font-weight: 400;">The future belongs to small, elite, AI-empowered squads led by a tight-knit trio of Product, Design, and Engineering. The game is faster and more complex than ever, and you absolutely still need a team to win.</span></p>
+<hr>
+<p><em>This article is AI generated by me from a series of questions and prompting using Gemini 3 Thinking model. I refined and editted the final version. It does, however, reflect my own personal opinion of where we are at for modern professional software engineering and why. I'd be interested to hear you thoughts - use disqus below.</em></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Cars!</title>
         <author>
@@ -19,7 +85,7 @@
             <category term="random"/>
 
         <updated>2025-09-04T13:43:23+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     These cars make me feel something! (also testing out Publii core lightbox plugin)
                 ]]>
@@ -49,7 +115,7 @@
             <category term="engineering"/>
 
         <updated>2025-09-04T13:36:21+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Safe (ish!) experimentation and continuous improvements are key to healthy codebases. We discussed https://github.com/scientistproject/Scientist.net yesterday, so I thought I'd get Cursor using GPT-5 to knock up a swift dotnet8 example. A few birds with one stone as it were. AI, latest model and cursor version&hellip;
                 ]]>
@@ -148,7 +214,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="engineering"/>
 
         <updated>2025-09-02T17:02:46+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     (which in turn was my L&amp;D... https://www.google.com/search?q=recursion) As an engineer, it is important to constantly learn and improve your skills. One way to do this is by developing mobile iOS applications in your L&amp;D time (nice perk of working at SBG! - 10%). Not only&hellip;
                 ]]>
@@ -191,7 +257,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="career"/>
 
         <updated>2025-09-02T17:00:02+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     When was the last time you learnt a new skill? We were recently challenged to learn something new. Something we’d never previously done. Yes, a “Lockdown Challenge”! I’ve always wanted to be able to juggle. I quite enjoy the diabolo, so juggling seemed like another great circus&hellip;
                 ]]>
@@ -245,7 +311,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="engineering"/>
 
         <updated>2025-07-18T15:21:32+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     IOT Temperature Sensor Sep 16, 2018 A write up of my raspberry pi home made temperature sensor that logs data to the cloud so that it can be visualised. …reporting live data into a variety of cloud based systems Live Data Here There were many&hellip;
                 ]]>
@@ -294,7 +360,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="engineering"/>
 
         <updated>2025-07-18T15:20:37+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     My First App - Update First Published Sep 28, 2022 on GitHub (pre-ai revolution) A write up of getting an app into the Apple® App Store®… So, if you’re a keen reader of this blog, you’ll not have failed to notice that I’ve been learning&hellip;
                 ]]>
@@ -414,7 +480,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="communications"/>
 
         <updated>2025-07-18T15:12:22+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     How do you ensure that everyone is on the same page? This is a look into “internal communications”…you know, the “we’ve won new business”, “please clear up in kitchen” or the “we’ve not hit a target” type communications. Photo by Jason Rosewell on Unsplash The broadcast of these&hellip;
                 ]]>
@@ -568,7 +634,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="leadership"/>
 
         <updated>2025-07-18T14:51:05+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     "We need additional resource!”… ... how often have you heard (or even said) that? What did you actually mean? Inmy experience, it’s a combination of things; something isn’t happening as quickly as you (or the other stakeholders) would like, or as well as you’d like&hellip;
                 ]]>
@@ -722,7 +788,7 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
             <category term="career"/>
 
         <updated>2025-07-18T14:45:03+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     In my career leading multidisciplinary delivery teams, I’ve often guided people through the choice of remaining technical or pursuing management roles. Some people start a role and clearly state that they want to remain technical. Many ask about career progression and the different directions they&hellip;
                 ]]>
@@ -747,35 +813,6 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
 <h1 id="my-experience">My experience</h1>
 <p>I have taken the journey, gradually becoming less technically hands. (I still enjoy coding and tinkering with tech)</p><p>This happened for a number of reasons. The company was growing rapidly and someone needed to recruit new staff; complete project working that was being won &amp; I needed to be more customer facing to assist a non technical PM. This allowed me - in a variety of roles - to experience and develop skills in requirements gathering, drafting proposals, costing projects, monitoring P&amp;Ls, dealing with HR information, setting business strategy and forming relationships with suppliers (and everything else in between!).</p><p>It was great to broaden my skill set and not just confine myself to solving technical problems. It was a conscious decision.</p><p>How have you dealt with this career choice? Are you facing it currently? I’d be interested to hear your experience.</p><p>Thank you for reading.</p><p>(First posted on Medium 4th March 2019, pre-ai revolution)
 <a href="https://medium.com/@adrenalinehit/to-manage-or-not-to-manage-that-is-the-question-4c6c7320d624">https://medium.com/@adrenalinehit/to-manage-or-not-to-manage-that-is-the-question-4c6c7320d624</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Five Star Service</title>
-        <author>
-            <name>Nick</name>
-        </author>
-        <link href="https://adrenalinehit.github.io/five-star-service.html"/>
-        <id>https://adrenalinehit.github.io/five-star-service.html</id>
-            <category term="customer"/>
-
-        <updated>2025-07-18T14:40:38+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Have you really experienced five star service? Have you ever felt shortchanged by the service you’ve received? The chances are that you can probably answer yes to both. My recent experience of 5 star service was in a hotel in the southern hemisphere. Some might&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 id="have-you-really-experienced-five-star-service">Have you really experienced five star service?</h1>
-<p>Have you ever felt shortchanged by the service you’ve received?</p><p>The chances are that you can probably answer yes to both.</p><p>My recent experience of 5 star service was in a hotel in the southern hemisphere. Some might have called the actions of the staff over the top, even obsessive.</p><p>On reflection, the service received highlighted some important characteristics of the culture at the hotel. Every little detail had to be correct, nothing was left to chance. The staff felt able to admit mistakes to their superiors. Each and every guest was treated like royalty.</p><p>We were made to feel special, valued and cared for. Needless to say, we enjoyed the experience.</p><p>“People will forget what you said. They will forget what you did. But they will never forget how you made them feel.” — Maya Angelou</p><p>In contrast, a recent mechanical issue left me feeling less than satisfied. Now, cars breakdown, I understand that. Not being kept informed during diagnosis and repair, being passed around between service team members and having to take action myself to resolve the situation isn’t 5 star service.</p><p>So, what can be learnt from these two experiences and applied in day to day dealings with clients?</p><ol>
-<li>If you make a mistake, own it</li>
-<li>Have a single point of contact to keep the customer informed</li>
-<li>Never wait for the customer to contact you… it won’t end well!</li>
-<li>Make it right, ideally going above and beyond their expectations</li>
-</ol>
-<p>If you have a complaints process, would you be happy being it’s subject? If not, why not?</p><p>Do you put the client first &amp; make them feel valued all the time? Do you keep them informed?</p><p>Thanks for reading.</p><p>(first published on Medium 25th Feb 2019 - pre-ai revolution)
-<a href="https://medium.com/@adrenalinehit/five-star-service-2a6d04b2d5df">https://medium.com/@adrenalinehit/five-star-service-2a6d04b2d5df</a></p>
             ]]>
         </content>
     </entry>
