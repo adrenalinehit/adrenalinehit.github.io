@@ -3,12 +3,64 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2025-12-02T14:27:17+00:00</updated>
+    <updated>2026-03-27T17:02:01+00:00</updated>
     <author>
         <name>Nick</name>
     </author>
     <id>https://adrenalinehit.github.io</id>
 
+    <entry>
+        <title>skipton.digital</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/skiptondigital.html"/>
+        <id>https://adrenalinehit.github.io/skiptondigital.html</id>
+
+        <updated>2026-03-27T17:02:01+00:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    What is it? https://skipton.digital / https://www.linkedin.com/groups/17858011/ A local meetup of like minded people who work in or around digital and technology. It's open to everyone - even if you don't work in technology, if you have an interest in what we're discussing, come along! A&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1>What is it?</h1>
+<p><a href="https://skipton.digital" title="Skipton.Digital" target="_blank" rel="noopener noreferrer">https://skipton.digital</a> / <a href="https://www.linkedin.com/groups/17858011/" title="Skipton Digital | LinkedIn Group" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/groups/17858011/</a> </p>
+<p>A local meetup of like minded people who work in or around digital and technology. It's open to everyone - even if you don't work in technology, if you have an interest in what we're discussing, come along!</p>
+<h1>Why did I create it?</h1>
+<p>A number of reasons:</p>
+<ul>
+<li>Community<br>
+<ul>
+<li>In this age of remote working, we've lost a lot of the in-person time. We need to be deliberate in bringing this back.</li>
+</ul>
+</li>
+<li>Knowledge sharing
+<ul>
+<li>Nothing better than sharing ideas and thinking about things you're passionate about</li>
+</ul>
+</li>
+<li>Networking
+<ul>
+<li>Who knows where the next opportunity is coming from... in this age of AI, human connection is going to be all the more important.</li>
+</ul>
+</li>
+<li>Personal reasons
+<ul>
+<li>Having recently moved to Skipton, I wanted to find out who worked in the digital ecosystem near where I now call home.</li>
+</ul>
+</li>
+</ul>
+<h1>What's been the response so far?</h1>
+<p>I'm pleased to say that we've had at least five people volunteer to help organise the meetup and a number of local businesses express their interest in getting involved. I'm grateful to all of them. Having run a Mobile App Development meetup previously, I know how difficult this would be to sustain on my own. Thanks to various people for the words of encouragement along the way, and offers of support and guidance.</p>
+<h1>What's next?</h1>
+<p>An inaugural meetup to discuss the way forward, and what others want to achieve. This will likely be 'down the pub' to begin with.</p>
+<h1>Think bigger?</h1>
+<p>I look around the northern tech landscape, and see events such as Leeds Digital festival and sheffield.digital. They are representing their larger cities' tech companies and innovators with quality events, natioanlly recognised. I'd like to do the same in Skipton and the surrounding area. I want to give back to the industry that I've worked in since I left university. Who knows where this may lead?</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Is Modern Software development still the Ultimate Team Sport?</title>
         <author>
@@ -773,46 +825,6 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
 </div>
 </div>
 </div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>To manage, or not to manage: that is the question</title>
-        <author>
-            <name>Nick</name>
-        </author>
-        <link href="https://adrenalinehit.github.io/to-manage-or-not-to-manage-that-is-the-question.html"/>
-        <id>https://adrenalinehit.github.io/to-manage-or-not-to-manage-that-is-the-question.html</id>
-            <category term="people"/>
-            <category term="engineering"/>
-            <category term="career"/>
-
-        <updated>2025-07-18T14:45:03+01:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    In my career leading multidisciplinary delivery teams, I’ve often guided people through the choice of remaining technical or pursuing management roles. Some people start a role and clearly state that they want to remain technical. Many ask about career progression and the different directions they&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>In my career leading multidisciplinary delivery teams, I’ve often guided people through the choice of remaining technical or pursuing management roles.</p><p>Some people start a role and clearly state that they want to remain technical. Many ask about career progression and the different directions they might take. This often involves conversations about team leadership or some form of management.</p><p>It often occurs with senior or lead engineers looking to take the next step up in their careers. As a colleague once said (paraphrasing badly), “In order to get paid more you have to take responsibility for something”. That something can often end up being people.</p><h1 id="does-it-suit-everyone">Does it suit everyone?</h1>
-<p>No, far from it. Colleagues have often remarked that they couldn’t think of anything worse than having to manage people, take commercial decisions or plan projects. Some see it as a drain on their time that could be better spent writing code, performing analysis or testing. Some people like the predictability of tech…people are far from predictable!</p><h1 id="is-it-avoidable">Is it avoidable?</h1>
-<p>Yes! 100%. At least, it should be.</p><p>Established companies have detailed technical levels through which you can progress. Google is a prime example. See <a href="https://levelsfyi.com/google-levels-salary/amp/">https://levelsfyi.com/google-levels-salary/amp/</a></p><p>I’d recommend a conversation early in your role with your line manager. Make it clear that you have no interest in getting involved with the managerial side of business. That being said, also make it clear that you want to stay technical and become the go to person for x, y or z.</p><h1 id="is-it-sensible">Is it sensible?</h1>
-<p>If you deeply understand something then the chances are you can explain it to someone else. Most people like imparting knowledge and therefore find themselves coaching or mentoring people (whether they’re junior or simply asking for advice).</p><p>As a manager, it’s highly rewarding to see people grow based on your counsel. It will be harder to juggle technical responsibilities and managerial tasks but you will learn useful new skills.</p><h1 id="who-does-it-benefit">Who does it benefit?</h1>
-<p>Done well and consciously it should benefit everyone. You’ll gain an understanding of the conflicting pressures in business, you’ll hopefully see people develop under your guidance and still get to keep your hand in on the tech.</p><h1 id="pitfalls">Pitfalls?</h1>
-<p>Without guidance you might end up being unhappy in your new role. You might have lost the technical aspects and you’ll have taken on tasks that divert your attention from things you’d rather be doing. You might not be a good manager of people, despite being technically excellent. You might alienate your colleagues who expect you to be able to do both your new and old roles simultaneously.</p><h1 id="half-way-house">Half way house?</h1>
-<p>You might be better suited to a team lead or architect-style position.</p><h3 id="maybe">Maybe….</h3>
-<ol>
-<li>Run workshops for junior staff</li>
-<li>Get your name out into the tech community by attending conferences</li>
-<li>Write blog posts</li>
-<li>Speak at events</li>
-<li>Contribute to open source projects</li>
-<li>Your tech reputation increases, your company gets some free marketing and you get to remain technical. Win-win.</li>
-</ol>
-<h1 id="my-experience">My experience</h1>
-<p>I have taken the journey, gradually becoming less technically hands. (I still enjoy coding and tinkering with tech)</p><p>This happened for a number of reasons. The company was growing rapidly and someone needed to recruit new staff; complete project working that was being won &amp; I needed to be more customer facing to assist a non technical PM. This allowed me - in a variety of roles - to experience and develop skills in requirements gathering, drafting proposals, costing projects, monitoring P&amp;Ls, dealing with HR information, setting business strategy and forming relationships with suppliers (and everything else in between!).</p><p>It was great to broaden my skill set and not just confine myself to solving technical problems. It was a conscious decision.</p><p>How have you dealt with this career choice? Are you facing it currently? I’d be interested to hear your experience.</p><p>Thank you for reading.</p><p>(First posted on Medium 4th March 2019, pre-ai revolution)
-<a href="https://medium.com/@adrenalinehit/to-manage-or-not-to-manage-that-is-the-question-4c6c7320d624">https://medium.com/@adrenalinehit/to-manage-or-not-to-manage-that-is-the-question-4c6c7320d624</a></p>
             ]]>
         </content>
     </entry>
