@@ -3,12 +3,105 @@
     <title>Nick&#x27;s Blog</title>
     <link href="https://adrenalinehit.github.io/feed.xml" rel="self" />
     <link href="https://adrenalinehit.github.io" />
-    <updated>2026-04-14T11:01:43+01:00</updated>
+    <updated>2026-07-14T22:43:50+01:00</updated>
     <author>
         <name>Nick</name>
     </author>
     <id>https://adrenalinehit.github.io</id>
 
+    <entry>
+        <title>Building TrainSpotterAI: How to Hunt Trains like a Pro for your kids (without looking like a commuter)</title>
+        <author>
+            <name>Nick</name>
+        </author>
+        <link href="https://adrenalinehit.github.io/building-trainspotterai-how-to-hunt-trains-like-a-pro-for-your-kids-without-looking-like-a-commuter.html"/>
+        <id>https://adrenalinehit.github.io/building-trainspotterai-how-to-hunt-trains-like-a-pro-for-your-kids-without-looking-like-a-commuter.html</id>
+            <category term="random"/>
+            <category term="mobile"/>
+            <category term="engineering"/>
+
+        <updated>2026-07-14T22:43:50+01:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Most train apps are designed for commuters—the kind of people who care about "delayed by 4 minutes" because they might miss their connecting train to Croydon. They are not designed for the enthusiasts, the photographers, or the mildly obsessive who just want to know: When&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div id="model-response-message-contentr_3f44897232304250" class="markdown markdown-main-panel enable-luminous-fast-follows enable-updated-hr-color stronger tutor-markdown-rendering" dir="ltr" aria-busy="false" aria-live="polite">
+<p data-path-to-node="2">Most train apps are designed for commuters—the kind of people who care about "delayed by 4 minutes" because they might miss their connecting train to Croydon. They are <i data-path-to-node="2" data-index-in-node="168">not</i> designed for the enthusiasts, the photographers, or the mildly obsessive who just want to know: <i data-path-to-node="2" data-index-in-node="268">When is this massive chunk of steel going to roar past my face? </i>Or even for parents who just want to keep their toddlers entertained.</p>
+<p data-path-to-node="3">Enter <strong data-path-to-node="3" data-index-in-node="6">TrainSpotterAI</strong>: a native Android app built specifically to bridge the gap between platform boarding times and trackside reality. It’s like Tinder, but instead of swiping on people who "love travel and dogs," you’re swiping on Class 800 Azumas. And honestly, the trains are much more reliable (most of the time!).</p>
+<h3 data-path-to-node="5">The Core Experience: Beyond the Platform (Where the Real Fun Is)</h3>
+<p data-path-to-node="6">Standard departure boards only care if a train stops. If a non-stop express is hurtling through at 125 mph, the average app just shrugs and pretends it doesn't exist. TrainSpotterAI doesn't do shrugs... I'm reliably informed that the underlying API will soon acknowledge passing expresses!</p>
+<p data-path-to-node="7">Using your GPS, the app sniffs out the nearest National Rail stations and curates a tight, 5-to-15-minute "spotting window."</p>
+<p data-path-to-node="8">But the real crown jewel is the <strong data-path-to-node="8" data-index-in-node="32">Trackside Estimate</strong> card. Instead of telling you when a train is stopping at a station three miles away, it does some high-speed mathematical wizardry. By calculating the distance and time between the queried station and the next stop on the train’s itinerary, it interpolates exactly when that glorious hunk of metal will pass <i data-path-to-node="8" data-index-in-node="359">your</i> specific, shivering body. It’s a literal countdown to train-spotting glory.</p>
+<h3 data-path-to-node="10">The Architecture: Keeping the Secret Sauce Secret (And Free)</h3>
+<p data-path-to-node="11">Building an app is fun until you realise you have to pay for data. Our primary data provider, the excellent <code data-path-to-node="11" data-index-in-node="108">headcode.dev</code>, has one very reasonable, but very strict rule: <strong data-path-to-node="11" data-index-in-node="169">Do not put your API keys in the client-side code.</strong></p>
+<p data-path-to-node="12">Because if you do, some clever script kiddie will steal it, run up a £10,000 bill, and leave you living on instant noodles.</p>
+<p data-path-to-node="13">To prevent financial ruin, we built a <strong data-path-to-node="13" data-index-in-node="38">Cloudflare Worker</strong> (using the ultra-speedy <strong data-path-to-node="13" data-index-in-node="80">Hono</strong> framework) to act as a backend proxy. This does three vital jobs:</p>
+<ol start="1" data-path-to-node="14">
+<li>
+<p data-path-to-node="14,0,0"><strong data-path-to-node="14,0,0" data-index-in-node="0">Security:</strong> It keeps our precious API keys locked away in a digital vault on the server, far from prying eyes.</p>
+</li>
+<li>
+<p data-path-to-node="14,1,0"><strong data-path-to-node="14,1,0" data-index-in-node="0">Performance:</strong> It handles rate limiting so our users don't accidentally DDOS our data provider.</p>
+</li>
+<li>
+<p data-path-to-node="14,2,0"><strong data-path-to-node="14,2,0" data-index-in-node="0">Data Transformation:</strong> It does the heavy lifting of figuring out where the next station is and prepping the coordinate data before sending it to your phone, saving your battery life for taking photos.</p>
+</li>
+</ol>
+<h3 data-path-to-node="16">Upstash Redis: Because I'm Cheap and Upstream Limits Exist</h3>
+<p data-path-to-node="17">Because <code data-path-to-node="17" data-index-in-node="8">headcode.dev</code> enforces account-wide rate limits, we can’t just let the app ping their servers every time a user blinks. To keep things running smoothly, I hooked up <strong data-path-to-node="17" data-index-in-node="173">Upstash Redis</strong> to run a dual-layer caching strategy:</p>
+<ul data-path-to-node="18">
+<li>
+<p data-path-to-node="18,0,0"><strong data-path-to-node="18,0,0" data-index-in-node="0">The Board Cache (20 seconds):</strong> If you and three other nerds are standing at the same bridge, you don't all need to make fresh requests. We cache the station board for 20 seconds.</p>
+</li>
+<li>
+<p data-path-to-node="18,1,0"><strong data-path-to-node="18,1,0" data-index-in-node="0">The Station Info Cache (30 days):</strong> Station coordinates and names don't change unless someone physically moves a station (unlikely, even for Network Rail). We cache this static data for a whole month.</p>
+</li>
+</ul>
+<p data-path-to-node="19">And if the upstream provider goes down? We’ve got <strong data-path-to-node="19" data-index-in-node="50">"stale-if-error"</strong> logic. The app will happily serve you cached data up to 3 minutes old. It’s better to have slightly old train data than to stare into a blank screen of digital nothingness.</p>
+<h3 data-path-to-node="21">Under the Hood: Pure, Unadulterated Kotlin</h3>
+<p data-path-to-node="22">No cross-platform compromises here. No React Native (although I did start there, but soon got bored of waiting for it to build!). No Flutter (maybe next time!). I wanted this thing to be fast, so TrainSpotterAI is written in <strong data-path-to-node="22" data-index-in-node="130">native Kotlin and Jetpack Compose</strong>. <em>(thanks Claude!)</em></p>
+<ul data-path-to-node="23">
+<li>
+<p data-path-to-node="23,0,0"><strong data-path-to-node="23,0,0" data-index-in-node="0">The Math:</strong> The app handles all the "spotting window" geometry locally. It uses Haversine formulas (the math used to calculate distances on a sphere) to figure out how far you are from the tracks.</p>
+</li>
+<li>
+<p data-path-to-node="23,1,0"><strong data-path-to-node="23,1,0" data-index-in-node="0">The Data:</strong> Instead of begging the backend to search for stations every time you move ten feet, the app carries a local database of UK stations (derived from NaPTAN) and scans it locally.</p>
+</li>
+<li>
+<p data-path-to-node="23,2,0"><strong data-path-to-node="23,2,0" data-index-in-node="0">The UI:</strong> You get a clean <strong data-path-to-node="23,2,0" data-index-in-node="24">List tab</strong> for a quick glance, and a <strong data-path-to-node="23,2,0" data-index-in-node="59">Map tab</strong> (powered by OpenStreetMap/osmdroid) to visualize the rail network around you in real-time.</p>
+</li>
+</ul>
+<h3 data-path-to-node="25">Current Status: Shhh, It’s a Secret (For Now)</h3>
+<p data-path-to-node="26">Right now, TrainSpotterAI is in a <strong data-path-to-node="26" data-index-in-node="34">Soft Launch</strong> phase, distributed strictly having the apk shared with you... I might get it into Google Play in due course.</p>
+<div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/Train_Tracking_System_Architecture_Overview.png" data-size="2752x1536"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/Train_Tracking_System_Architecture_Overview-thumbnail.png" alt="TrainspotterAI architecture" width="720" height="402"></a>
+<figcaption>TrainspotterAI architecture</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-210321.png" data-size="1080x2424"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-210321-thumbnail.png" alt="Map view" width="720" height="1616"></a>
+<figcaption>Map view</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/TrainSpotterAI_Engineering_-_Slide_2.png" data-size="1376x768"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/TrainSpotterAI_Engineering_-_Slide_2-thumbnail.png" alt="Concept explanation" width="720" height="402"></a>
+<figcaption>Concept explanation</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/TrainSpotterAI_Engineering_-_Slide_8.png" data-size="1376x768"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/TrainSpotterAI_Engineering_-_Slide_8-thumbnail.png" alt="How it tries to work" width="720" height="402"></a>
+<figcaption>How it tries to work</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-214654.png" data-size="1080x2424"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-214654-thumbnail.png" alt="Acknowledgements" width="720" height="1616"></a>
+<figcaption>Acknowledgements</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-205838.png" data-size="1080x2424"><img loading="lazy" src="https://adrenalinehit.github.io/media/posts/18/gallery/Screenshot_20260714-205838-thumbnail.png" alt="Demo of it working" width="720" height="1616"></a>
+<figcaption>Demo of it working</figcaption>
+</figure>
+</div></div>
+<p data-path-to-node="27">Why the secrecy? Because the <code data-path-to-node="27" data-index-in-node="29">headcode.dev</code> API is still technically in "Alpha," and we need to make sure our caching layers actually hold up before we unleash a horde of enthusiastic train spotters on to the live servers. Big shout out to <a href="https://www.linkedin.com/in/aranw/" target="_blank" rel="noopener noreferrer">Aran Wilkinson</a> who is the creator of headcode.dev API and has rapidly enabled my access and fixed up a couple of bugs as well as promising exciting new features soon!</p>
+<p data-path-to-node="28">But watch this space. Soon, you’ll never have to guess whether that distant rumble is a freight train or just thunder again. Stay tuned!</p>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Building my own RAG visualiser</title>
         <author>
@@ -598,125 +691,6 @@ Scientist.ResultPublisher = new ConsoleResultPublisher();</code></pre>
 <li><a href="https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/temperature/">some cambridge site</a></li>
 <li><a href="https://aws.amazon.com/serverless/">various aws docs</a></li>
 </ul>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Cat Codes - My First Apple App</title>
-        <author>
-            <name>Nick</name>
-        </author>
-        <link href="https://adrenalinehit.github.io/cat-codes-my-first-apple-app.html"/>
-        <id>https://adrenalinehit.github.io/cat-codes-my-first-apple-app.html</id>
-            <category term="mobile"/>
-            <category term="engineering"/>
-
-        <updated>2025-07-18T15:20:37+01:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    My First App - Update First Published Sep 28, 2022 on GitHub (pre-ai revolution) A write up of getting an app into the Apple® App Store®… So, if you’re a keen reader of this blog, you’ll not have failed to notice that I’ve been learning&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <header class="post-header">
-<h1 class="post-title p-name">My First App - Update</h1>
-<p class="post-meta"><time class="dt-published" datetime="2022-09-28T19:00:00+00:00">First Published Sep 28, 2022 on GitHub (pre-ai revolution)</time></p>
-</header>
-<div class="post-content e-content">
-<p>A write up of getting an app into the Apple® App Store®…</p>
-<p><img loading="lazy" src="https://adrenalinehit.github.io/assets/images/preview.png" alt="Preview picture of app" data-is-external-image="true"></p>
-<h2 id="why">Why?</h2>
-<p>So, if you’re a keen reader of this blog, you’ll not have failed to notice that I’ve been learning SwiftUI®. (If you’re not a keen reader of this blog…where have you been?! ;-) )</p>
-<p>I’m fortunate to be part of the native app development teams at SkyBet. We’re always looking to make our apps better and innovate in the latest technologies. As a leader I think it’s important to “practice what you preach” and be at least familiar with the ecosystem in which you play a (small) part.</p>
-<p>It’s been a while since I’ve written any production code (they’ll be plenty of people who are happy about this…) but I do like to practice every now and again. Learning a new language &amp; framework seemed like a good excuse.</p>
-<p>Those who know me will be aware that I’m an Android user. You might be wondering why this wasn’t Jetpack Compose… watch this space. :-)</p>
-<h2 id="how">How?</h2>
-<ul>
-<li>
-<p>Get access to a Mac® laptop (seems obvious, but I’m fortunate to have this - I’m aware it’s a high barrier to entry. You can learn and compile Swift® online here <a class="vglnk" href="http://online.swiftplayground.run/" rel="nofollow">http://online.swiftplayground.run/</a> without a Mac)</p>
-</li>
-<li>
-<p>Learnt SwiftUI - following the Apple® tutorials. (<a class="vglnk" href="https://developer.apple.com/tutorials/swiftui" rel="nofollow">https://developer.apple.com/tutorials/swiftui</a>)</p>
-</li>
-<li>
-<p>Thought up a simple idea for an app; it helped that the images had an API of sorts to download them (credit to Fili Wiese for putting these sites together)</p>
-</li>
-<li>
-<p>Developed the app (complete with <em>some</em> Unit and UI tests - you can see them for yourself in the code; I need to add more.)</p>
-</li>
-<li>
-<p>Became a fully fledged Apple developer (<a class="vglnk" href="https://developer.apple.com/" rel="nofollow">https://developer.apple.com/</a>)</p>
-</li>
-<li>
-<p>I was already familiar with the App Stores processes, but I still had to fill out my own Privacy Policy and generate App Store assets (this is hard work for a non-designer!).</p>
-</li>
-<li>
-<p>Submitted to Apple after frequent Testflight releases</p>
-</li>
-<li>
-<p>Dealt with 3 app review rejections (I’d forgotten to include the <em>required</em> capabilities section <a class="vglnk" href="https://developer.apple.com/support/required-device-capabilities/" rel="nofollow">https://developer.apple.com/support/required-device-capabilities/</a>) (<code class="language-plaintext highlighter-rouge">&lt;rant&gt;</code>why, Apple, if it’s a required element, don’t you prompt before wasting your review team’s time? Or prevent installation of the app on a simulator? <code class="language-plaintext highlighter-rouge">&lt;/rant&gt;</code>)</p>
-</li>
-</ul>
-<h2 id="what-have-i-learnt">What have I learnt?</h2>
-<p>Lots!</p>
-<ul>
-<li>
-<p>Swift (a small fraction I’m sure)</p>
-</li>
-<li>
-<p>SwiftUI (scratched the surface!)</p>
-</li>
-<li>
-<p>Xcode Cloud (this is an amazing <em>free</em> provision from Apple!)</p>
-</li>
-<li>
-<p>Bitrise (although I didn’t use it for the majority of the builds)</p>
-</li>
-<li>
-<p>Refamiliarised myself with Github (especially around tracking a project)</p>
-</li>
-<li>
-<p>The Apple ecosystem - resources, communities</p>
-</li>
-<li>
-<p>Dealing with frustration and set back (and keeping on)</p>
-</li>
-<li>
-<p>More about using Xcode (a tiny proportion of it - I’m still very much a beginner)</p>
-</li>
-<li>
-<p>Design (<em>I’m definitely not a designer</em>)</p>
-</li>
-<li>
-<p>Making connections with people</p>
-</li>
-<li>
-<p>Building an app is fun!</p>
-</li>
-<li>
-<p>… &amp; probably more that I’ve already forgotten</p>
-</li>
-</ul>
-<h2 id="where-next">Where next?</h2>
-<p>The source code is open source and available to peruse at your leisure at <a class="vglnk" href="https://github.com/adrenalinehit/CatCodes" rel="nofollow">https://github.com/adrenalinehit/CatCodes</a>.</p>
-<p>There are many ways to improve and further develop the app. Take a look at the issues list here: <a class="vglnk" href="https://github.com/adrenalinehit/CatCodes/issues" rel="nofollow">https://github.com/adrenalinehit/CatCodes/issues</a>.</p>
-<p>Get in touch if you’d like to get involed. I will review all PRs submitted. (<a class="vglnk" href="https://github.com/adrenalinehit/CatCodes/pull/30" rel="nofollow">https://github.com/adrenalinehit/CatCodes/pull/30</a> for example)</p>
-<p>I definitely need an artist to create some art work for this app - I’m <em>not</em> a designer or artist. Please get in touch.</p>
-<h2 id="thanks--acknowledgements">Thanks &amp; Acknowledgements</h2>
-<p>Matt Glover for his contributions and beta testing &amp; also for creating Code Club.</p>
-<p>Matt Gallagher for his beta testing and encouragement.</p>
-<p>Jennifer Munro-Brown for encouraging me to write this up.</p>
-<p>Many other colleagues who have had to put up with me talking about the app for a few months now.</p>
-<p>My employer for providing time dedicated to Learning and Development. (we’re hiring - <a class="vglnk" href="https://www.skybetcareers.com/" rel="nofollow">https://www.skybetcareers.com</a>)</p>
-<p>Fili Wiese for the images from <a class="vglnk" href="https://httpcats.com/" rel="nofollow">https://httpcats.com</a> <a class="vglnk" href="https://http.dog/" rel="nofollow">https://http.dog</a> and <a class="vglnk" href="https://http.garden/" rel="nofollow">https://http.garden</a>.</p>
-<p><a class="vglnk" href="https://unsplash.com/@anushabarwa" rel="nofollow">https://unsplash.com/@anushabarwa</a> for the logo photo <a class="vglnk" href="https://unsplash.com/photos/ppKcYi1CXcI" rel="nofollow">https://unsplash.com/photos/ppKcYi1CXcI</a></p>
-<h2 id="would-you-like-to-download-the-app">Would you like to download the app?</h2>
-<p><a href="https://apps.apple.com/us/app/http-codes/id1626500016"><img loading="lazy" src="https://adrenalinehit.github.io/assets/images/download-on-appstore.svg" alt="Download on App Store" data-is-external-image="true"></a></p>
-<h2 id="anything-else-youd-like-to-know">Anything else you’d like to know?</h2>
-<p>Please, reach out. Get in touch.</p>
-<p>If you’ve got an app idea, get started… see where it goes.</p>
 </div>
             ]]>
         </content>
